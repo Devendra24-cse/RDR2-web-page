@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #000000;
+    background-image: radial-gradient(circle, #270a0a 25%, #000000 100%);
+
+
+
+}
+p {
+    display: inline;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    border-bottom: 2px solid #d1b280;
+
+}
+.logo {
+    width: 228px;
+
+}
+.logo h1 {
+    color: #e3c698;
+    background-color: #111111;
+    width: max-content;
+    height: 100%;
+    border-radius: 0;
+    font-size: 40px;
+    margin-left: 10px;
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.search {
+    background-color: #111111;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icons {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 15px;
+    background-color: #000000;
+
+
+}
+.icons button {
+    background-color: #000000;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons button:hover {
+    background-color: #8a0303;
+}
+
+#searchbar {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    background-color: #d1b280;
+    border: 2px solid #8a0303;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #8a0303a6;
+    color: #8a0303;
+    padding-left: 15px;
+    font-size: 20px;
+    min-width: 100px;
+}
+#searchbar::placeholder {
+    color: #8a030360;
+}
+.search button {
+    position: relative;
+    top: 0px;
+    left: -95px;
+    width: 90px;
+    height: 46%;
+    border-radius: 50px;
+    background-color: #8a0303;
+    padding-left: 20px;
+}
+.search button:hover {
+    color: #e3c698;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.other {
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+
+}
+#leftbar {
+    width: 15%;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    top: 60px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    border-right: 2px solid #8a0303;
+
+}
+
+
+
+#leftbar::-webkit-scrollbar {
+    display: none;
+}
+.postfeed {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 15%;
+    width: 80%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+.movingwindow {
+    width: 100%;
+}
+
+
+.buttons {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 20px;
+    border-bottom: 2px solid #333;
+}
+
+button {
+    padding-left: 30px;
+    text-align: left;
+    font-family: Smooch Sans;
+    font-size: 25px;
+    color: #d1b280;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+}
+button:hover {
+    background-color: #8a0303;
+    color: #fff;
+}
+button:active {
+    background-color: #8a0303;
+    color: #fff;  
+
+}
+.communities {
+    height: 25%;
+    background-color: #270a0a;
+}
+
+
+.followpf {
+    font-family: Smooch Sans;
+    color: #a89f91;
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+    height: max-content;
+    font-size: 11px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.418);
+}
+.profile {
+    display: flex;
+    margin-left: 20px;
+    
+}
+.followpf button {
+    padding-left: 35px;
+
+}
+.profile p {
+    margin-top: 6px;
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    color: #d1b280; 
+}
+.justimage {
+    width: 50px;
+    padding: 5px;
+    display: flex;
+}
+.justimage img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.kuchbhi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h1 {
+    text-align: center;
+    background-color: rgb(85, 71, 71);
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    font-size: 25px;
+}
+#resizebutton {
+    position: fixed;
+    top: 80px;
+    left: calc(15% - 15px);
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+    background-color: #1a1a1a; 
+    border: 1px solid #8a0303; 
+    color: #d1b280;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0; 
+    font-size: 16px;
+    z-index: 200;
+}
+#resizebutton:hover {
+    background-color: #333; 
+}
+#communitieslist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.recent {
+    width: 22%;
+
+    padding: 10px;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    font-family: Smooch Sans;
+
+}
+.recent::-webkit-scrollbar {
+    display: none;
+}
+#movingpart {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#onlyheadline span {
+    position: absolute;
+    left: 15px;
+}
+.recentpost {
+    width: 300px;
+    height: 140px;
+    min-height: 120px;
+    padding-top: 10px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    color: #a89f91;
+}
+#movingpart button {
+    position: absolute;
+    color: #d1b280;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    top: 0px;
+    right: 15px;
+    padding: 0;
+}
+#onlyheadline {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 50px;
+    padding-top: 10px;
+    min-height: 50px;
+    color: #d1b280;
+
+}
+.recentname {
+    font-size: 18px;
+    padding-left: 30px;
+}
+.recentname span {
+    left: -10px;
+    position: absolute;
+}
+.recentname .material-symbols-outlined {
+    margin-left: 7px;
+}
+.recentimage {
+    width: 40%;
+    padding: 10px;
+}
+.recentimage img {
+    width: 100px;
+    border-radius: 10px;
+}
+.recentcaption {
+    padding-left: 10px;
+    font-size: 15px;
+}
+.commentandall {
+    padding-left: 10px;
+    font-size: 13px;
+}
+.otherthanimage {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 60%;
+}
