@@ -4,134 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Styles/Theme.css">
+    <link rel="stylesheet" href="Styles/post.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <div class="intro">
-        <div class="gamename">
-            <div class="red-dead">
-                <img src="Images/red.jpg" alt="" id="red">
-                <img src="Images/dead.jpg" alt="" id="dead">
+    <div class="header">
+        <div class="logo">
+           <h1>Wild West</h1>
+        </div>
+        <div class="search">
+            <input type="text" id="searchbar" placeholder="Search Here">
+            <button id="searchbutton">Search</button>
+        </div>
+        <div class="icons">
+            <button class="icon-btn">
+                <span class="material-symbols-outlined">newspaper</span>
+            </button>
 
-            </div>
-            <div class="redemption">
-                <img src="Images/redemption.jpg" alt="" id="redemption">
-            </div>
-        </div>
-        <div class="number">
-            <img src="Images/two.jpg" alt="" id="two">
-        </div>
-    </div>
-    <div class="container" id="right">
-        <div class="info">
-            <div class="name">
-                <span class="highlighted">Arthor</span>morgan
-            </div>
-            <div class="about">
-                Most trusted gang member
-            </div>
-            <div class="bio">
-                Dutch's trusted right arm and the story protagonist. Arthur has been a member of the gang since he was a young boy,. His loyalty to the gang leader has been unwavering in this time
-            </div>
+            <button class="icon-btn" id="chatbutton">
+                <span class="material-symbols-outlined">chat</span>
+            </button>
 
-        </div>
-        <div class="photo">
-            <img src="removed/rdr2_arthur_morgan.png" alt="" id="image">
+            <button class="create-btn">
+                <span class="material-symbols-outlined">add_box</span>
+            </button>
 
-        </div>
-    </div>
-    <div class="container alt" id="left">
-        <div class="info">
-            <div class="name" id="dutch_name">
-                <span id="dutch"><span class="highlighted">Dutch</span> van der Linde</span>
-            </div>
-            <div class="about">
-                The charismatic leader of the gang
-            </div>
-            <div class="bio">
-                Dutch is radically opposed to government control. He values individual liberties above all else and dreams of living an independent existence
-            </div>
+            <button class="icon-btn">
+                <span class="material-symbols-outlined">notifications</span>
+            </button>
 
-        </div>
-        <div class="photo">
-            <img src="removed/rdr2_dutch.png" alt="" id="image">
-        </div>
-    </div>
-    <div class="container" id="right">
-        <div class="info">
-            <div class="name">
-                <span class="highlighted">hosea</span> matthews
-            </div>
-            <div class="about">
-                Hosea is the most senior member of the gang 
-            </div>
-            <div class="bio">
-                Intelligent and levelheaded, Hosea regularly advises Dutch and is valued for his wisdom. 
-            </div>
-        </div>
-        <div class="photo">
-            <img src="removed/rdr2_hosea.png" alt="" id="image">
+            <button class="profile-icon">
+                <span class="material-symbols-outlined">account_circle</span>
+                <div class="online-dot"></div>
+            </button>
         </div>
     </div>
-    <div class="container alt" id="left">
-        <div class="info">
-            <div class="name">
-                <span class="highlighted">john</span> marston
-            </div>
-            <div class="about">
-                John has been Dutch's protege.
-            </div>
-            <div class="bio">
-                He is now at a personal crossroads in his life. Husband in all but lawful status to Abigail, and the father of Jack.
+    <div class="other">
+    <div id="leftbar">
+        <div class="buttons">
+            <button><span class="material-symbols-outlined">home</span><p>Home</p> </button>
+            <button><span class="material-symbols-outlined">trending_up</span><p>Popular</p> </button>
+            <button><span class="material-symbols-outlined">newspaper</span><p>News</p> </button>
+            <button><span class="material-symbols-outlined">explore</span><p>Explore</p> </button>
+            <button><span class="material-symbols-outlined">person</span><p>Devendra</p> </button>
+        </div>
+        <div class="followpf">
+            <button id="followingbutton"><p>Following</p></button>
+            <div  class="kuchbhi" id="followinglist">
+                <div class="profile">
+                    <div class="justimage"><img src="Images/AM.jpg" alt=""></div>  
+                    <p>Arthor Morgan</p>
+                </div>
+                <div class="profile">
+                    <div class="justimage"><img src="Images/DVNL.jpg" alt=""></div>  
+                    <p>Dutch</p>
+                </div>
+                <div class="profile">
+                    <div class="justimage"><img src="Images/MB.jpg" alt=""></div>  
+                    <p>Micah Bell</p>
+                </div>
+                <div class="profile">
+                    <div class="justimage"><img src="Images/SA.jpg" alt=""></div>  
+                    <p>Saddie Adler</p>
+                </div>
             </div>
         </div>
-        <div class="photo">
-            <img src="removed/rdr2_john_marston.png" alt="" id="image">
+        <div class="followpf">
+            <button id="communitiesbutton"><p>Communities</p></button>
+                <div id="communitieslist">
+                    <div class="profile">
+                        <div class="justimage"><h1>V</h1></div>  
+                        <p>Van der Linde gang</p>
+                    </div>
+                    <div class="profile">
+                        <div class="justimage"><h1>L</h1></div>  
+                        <p>Lemoyne Raiders</p>
+                    </div>
+                    <div class="profile">
+                        <div class="justimage"><h1>O</h1></div>  
+                        <p>O'Driscoll Boys</p>
+                    </div>
+                    <div class="profile">
+                        <div class="justimage"><h1>P</h1></div>  
+                        <p>Pinkertons</p>
+                    </div>                    
+                </div>
+
+        </div>  
+    </div>
+    <button id="resizebutton">&#9776;</button>
+    <div class="postfeed" id="postfeed" >     
+    <div class="movingwindow">
+    <div class="postWindow">
+        <div class="userDetail">
+            <img src="Images/Arthur.webp" alt=""  id="ppf">
+            
+            <div class="userText">
+                <div class="nameRow">
+                    <h3 id="name">Arthor Morgan</h3>
+                    <h4 id="time">01:12 PM 26 March 2026</h4>                     
+                </div>
+                <span id="username">@cowpoke</span>
+            </div>
+        </div>
+           
+        <div class="postCaption">
+            Big fish. Too damn cold. I'm goin' back to Valentine.
+        </div>
+
+        <div class="post">
+            <img src="Images/arthor fishing.webp" alt="">
+        </div>
+        <div class="likes">
+            <div class="pair">
+                <button id="likeBtn">&#9829;</button>
+                <span id="likeCnt">25</span>                
+            </div>
+            <div class="pair">
+                <button id="shareBtn">&#128488;</button>
+                <span id="shareCnt">5</span>
+            </div>
+            <div class="pair">
+                <button id="repostBtn">&#8693</button>
+                <span id="repostCnt">11</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="postWindow">
+        <div class="userDetail">
+            <img src="Images/Dutch.jpg" alt=""  id="ppf">
+            
+            <div class="userText">
+                <div class="nameRow">
+                    <h3 id="name">Dutch van der Linde</h3>
+                    <h4 id="time">04:30 AM 2 March 2026</h4>                     
+                </div>
+                <span id="username">@masterplaner</span>
+            </div>
+        </div>
+           
+        <div class="postCaption">
+            One Last Score...
+        </div>
+
+        <div class="post">
+            <img src="Images/Dutch_Shooting.webp" alt="">
+        </div>
+        <div class="likes">
+            <div class="pair">
+                <button id="likeBtn">&#9829;</button>
+                <span id="likeCnt">25</span>                
+            </div>
+            <div class="pair">
+                <button id="shareBtn">&#128488;</button>
+                <span id="shareCnt">5</span>
+            </div>
+            <div class="pair">
+                <button id="repostBtn">&#8693</button>
+                <span id="repostCnt">11</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="postWindow">
+        <div class="userDetail">
+            <img src="Images/John1907New.webp" alt=""  id="ppf">
+            
+            <div class="userText">
+                <div class="nameRow">
+                    <h3 id="name">John Marston</h3>
+                    <h4 id="time">10:20 PM 12 March 2026</h4>                     
+                </div>
+                <span id="username">@jimmilton</span>
+            </div>
+        </div>
+           
+        <div class="postCaption">
+            Try at first time 
+        </div>
+
+        <div class="post">
+            <img src="Images/Screenshot 2026-03-27 013551.png" alt="">
+        </div>
+        <div class="likes">
+            <div class="pair">
+                <button id="likeBtn">&#9829;</button>
+                <span id="likeCnt">25</span>                
+            </div>
+            <div class="pair">
+                <button id="shareBtn">&#128488;</button>
+                <span id="shareCnt">5</span>
+            </div>
+            <div class="pair">
+                <button id="repostBtn">&#8693</button>
+                <span id="repostCnt">11</span>
+            </div>
+        </div>
+
+    </div>
+        </div>
+
+    </div>
+    <div class="recent">
+        <div id="movingpart">
+            <div id="onlyheadline">
+                <span>recent post</span> 
+                <button id = "clearbutton">clear</button>
+            </div>
+            <div class="recentpost">
+                <div class="otherthanimage">
+                <div class="recentname"><span class="material-symbols-outlined">person</span> &nbsp;Sheriff Gray</div>
+                <div class="recentcaption">Drinking on the job again. If a Braithwaite asks, tell 'em I'm doing "undercover surveillance" at the parlor</div>
+                <div class="commentandall"> 14 likes &#8226; 16 comment </div>
+                </div>
+                <div class="recentimage"><img src="Images/greypalour.webp" alt=""></div>
+            </div>
+            <div class="recentpost">
+                <div class="otherthanimage">
+                <div class="recentname"><span class="material-symbols-outlined">person</span>&nbsp;Leviticus Cornwall</div>
+                <div class="recentcaption">Just bought a brand new train exclusively so those Van der Linde pests can't rob it. #BillionaireGrindset</div>
+                <div class="commentandall"> 1569 likes &#8226; 250 comment </div>
+                </div>
+                <div class="recentimage"><img src="Images/train.webp" alt=""></div>
+            </div>
+            <div class="recentpost">
+                <div class="otherthanimage">
+                <div class="recentname"><span class="material-symbols-outlined">person</span> &nbsp;Angelo Bronte</div>
+                <div class="recentcaption">Met some filthy cowboys today. One of them actually smelled like horse manure and bad decisions</div>
+                <div class="commentandall"> 963 likes &#8226; 56 comment </div>
+                </div>
+                <div class="recentimage"><img src="Images/atalngloplace1.jpg" alt=""></div>
+            </div>
+             <div class="recentpost">
+                <div class="otherthanimage">
+                <div class="recentname"><span class="material-symbols-outlined">person</span> &nbsp;Penelope Braithwaite</div>
+                <div class="recentcaption">Sneaking out to see my forbidden lover! Hopefully my heavily armed, moonshine-drunk relatives don't notice.</div>
+                <div class="commentandall"> 19 likes &#8226; 6 comment </div>
+                </div>
+                <div class="recentimage"><img src="Images/braithwaitemanor.webp" alt=""></div>
+            </div>
+             <div class="recentpost">
+                <div class="otherthanimage">
+                <div class="recentname"><span class="material-symbols-outlined">person</span> &nbsp;Agent Milton</div>
+                <div class="recentcaption">Felt cute, might track down a notorious gang and destroy their entire outlaw way of life later</div>
+                <div class="commentandall"> 14 likes &#8226; 16 comment </div>
+                </div>
+                <div class="recentimage"><img src="Images/agentmilton1.jpg" alt=""></div>
+            </div>
         </div>
     </div>
-    <div class="container" id="right">
-        <div class="info">
-            <div class="name">
-                <span class="highlighted">micah</span>bell
-            </div>
-            <div class="about">
-                A career criminal and hitman.
-            </div>
-            <div class="bio">
-                 Wild and unpredictable but he lives for the action and he is rat .
-            </div>
-        </div>
-        <div class="photo">
-            <img src="removed/rdr2_micah.png" alt="" id="image">
-        </div>
     </div>
-    <div class="container alt" id="left">
-        <div class="info">
-            <div class="name">
-                <span class="highlighted">sadie</span> adler 
-            </div>
-            <div class="about">
-                A widow who is hell-bent on taking revenge.
-            </div>
-            <div class="bio">
-                Relentless and afraid of nothing and no one. The wrong woman to cross, but very loyal to those she loves.
-            </div>
-        </div>
-        <div class="photo">
-            <img src="removed/rdr2_sadie.png" alt="" id="image">
-        </div>
-    </div>
-    <div class="othercharacters"> Other Characters</div>
-    <div class="grid">
-        <div class="smallbox"><img src="removed/rdr2_charles.png" alt="" class="smallimg"> <div class="smallname">Charles Smith</div></div>
-        <div class="smallbox"><img src="removed/rdr2_lenny.png" alt="" class="smallimg"><div class="smallname">Lenny Summers</div></div>
-        <div class="smallbox"><img src="removed/rdr2_abigail.png" alt="" class="smallimg"><div class="smallname">Abigail Roberts</div></div>
-        <div class="smallbox"><img src="removed/rdr2_bill.png" alt="" class="smallimg"><div class="smallname">Bill Williamson</div></div>
-        <div class="smallbox"><img src="removed/rdr2_karen.png" alt="" class="smallimg" ><div class="smallname">Karen Jones</div></div>
-        <div class="smallbox"><img src="removed/rdr2_sean.png" alt="" class="smallimg"><div class="smallname">Sean Macguire</div></div>
-        <div class="smallbox"><img src="removed/rdr2_susan.png" alt="" class="smallimg"><div class="smallname">Susan Grimshaw</div></div> 
-        <div class="smallbox"><img src="removed/rdr2_pearson.png" alt="" class="smallimg"><div class="smallname">Pearson</div></div>
-        <div class="smallbox"><img src="removed/rdr2_javier.png" alt="" class="smallimg"><div class="smallname">Javier Escuella</div></div>
-    </div>
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/post.js"></script>
+
 </body>
 </html>
