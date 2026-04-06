@@ -5,15 +5,16 @@ const signBtn = document.getElementById("signupB");
 const loginBtn = document.getElementById("loginB");
 
 
-
 const urlParams = new URLSearchParams(window.location.search);
 const actionType = urlParams.get('action');
 
 document.addEventListener("DOMContentLoaded", () => {
     if (actionType === 'login') {
+        document.title = "Log-in";
         loginBtn.click();
     } else {
         signBtn.click(); 
+        document.title = "Sign-up";
     }
 });
 
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 signBtn.addEventListener('click', ()=> {
     signupWindow.style.display = "flex";
+    document.title = "Sign-up";   
     signBtn.style.backgroundColor = "#8a0303";
     signBtn.style.color = "#fff";
     loginBtn.style.backgroundColor = "#1a1a1a";
@@ -31,6 +33,7 @@ signBtn.addEventListener('click', ()=> {
 })
 loginBtn.addEventListener('click', ()=> {
     loginWindow.style.display = "flex";
+    document.title = "Log-in";
     loginBtn.style.backgroundColor = "#8a0303";
     loginBtn.style.color = "#fff";
     signBtn.style.backgroundColor = "#1a1a1a";
