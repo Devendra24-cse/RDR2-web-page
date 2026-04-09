@@ -154,6 +154,6 @@ input:focus {
     border-radius: 0px;
 }
 
-#error {
+#sigerror , #logerror {
     color: #d1b280;
 }

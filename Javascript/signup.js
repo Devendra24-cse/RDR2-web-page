@@ -50,26 +50,47 @@ submitBtn.addEventListener('click', function(event){
     let email = document.getElementById("email").value.trim();
     let password = document.getElementById("password").value.trim();
     let confirmPassword = document.getElementById("confirmpassword").value.trim();
-    let errorText = document.getElementById("error");
+    let errorText = document.getElementById("sigerror");
 
 
     if(name === ""|| email ==="" || password ==="" || confirmPassword ===""){
-        return errorText.textContent = "error 404";
+        return errorText.textContent = "Fill all Enteries";
     }
 
     if(!email.includes("@") || !email.includes(".") || email.indexOf("@")> email.indexOf(".")){
-        return errorText.textContent = "error in email";
+        return errorText.textContent = "Enter Valid Email address";
     }
     if(password.length < 6){
-        return errorText.textContent = "error in password";
+        return errorText.textContent = "Password must Contain atleast 6 digit ";
     }
     if(password !== confirmPassword){
-        return errorText.textContent = "error in confirm password";
+        return errorText.textContent = "Recheck Confirm password";
     }
     alert("wellcome " +" "+ name);
-    console.log("user logined : ", {name  , email, password});
+    console.log("user Sign-uped : ", {name  , email, password});
     window.location.href = "main.html";
 
+})
+
+const loginButton = document.getElementById("btn-login");
+loginButton.addEventListener('click', function(event){
+    let email = document.getElementById("logemail").value.trim();
+    let password = document.getElementById("logpassword").value.trim();
+    let errorText = document.getElementById("logerror");
+
+
+    if( email ==="" || password ===""){
+        return errorText.textContent = "Fill All of Them ";
+    }
+    if(!email.includes("@") || !email.includes(".") || email.indexOf("@")> email.indexOf(".")){
+        return errorText.textContent = "Enter Valid Email address";
+    }
+    if(password.length < 6){
+        return errorText.textContent = "Passowrd must Contain atleast 6 digit ";
+    }
+    alert("wellcome ");
+    console.log("user logined : ", { email, password});
+    window.location.href = "main.html";
 })
 
 
